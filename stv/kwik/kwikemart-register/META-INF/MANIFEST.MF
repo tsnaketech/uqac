@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Main-Class: RegisterDemo
+Class-Path: .
+Built-By: sylvain
+Built-Date: 2020-04-06 16:08:04
+Implementation-Version: 1.0
+

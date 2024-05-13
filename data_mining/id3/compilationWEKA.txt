@@ -1,0 +1,72 @@
+### Apache ANT ###
+
+- Télécharger Apache ANT
+http://apache.mirror.vexxhost.com//ant/binaries/apache-ant-1.10.7-bin.zip
+
+Placer le dans un répertoire, dans notre cas ça sera le répertoire 
+D:\ant
+
+### Java ###
+
+- Télécharger Java JDK, connexion au site obligatoire pour pouvoir t
+https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+- Installer Java JDK
+
+- Identifier son répertoire, dans notre cas 
+C:\Program Files\Java\jdk1.8.0_231
+
+### Variables d'environnement ###
+
+- Taper "Modifier les variables d'envionnement système" dans la barre de recherche Windows
+- Cliquer sur "Variables d'environnement..."
+- Cliquer sur "Nouvelle..." dans les variables d'environnemnt de l'utilisateur
+
+- Ajout 1
+
+Champ 1 : ANT_HOME
+Champ 2 : D:\ant
+
+- Ajout 2
+
+Champ 1 : JAVA_HOME
+Champ 2 : C:\Program Files\Java\jdk1.8.0_231
+
+- Cliquer deux fois sur la variable PATH
+- Ajouter deux variables dans la variable 
+
+%ANT_HOME%\bin
+%JAVA_HOME%\bin
+
+### Source weka ###
+
+- Aller dans le répertoire d'installation de Weka, dans notre cas
+D:\Program Files\Weka-3-8
+
+- Récupérer dans un fichier temporaire les information de "weka-src.jar", dans notre cas
+E:\temp
+- Ajouter votre ID3 modifié dans .\src\main\java\weka\classifiers\trees
+- Modifier GenericObjectEditor.props présnat dans .\src\main\java\weka\gui, ajouter la ligne suivante après weka.classifiers.trees.ID3Modify,\ 
+- après weka.classifiers.trees.ID3,\
+
+### Compilation ###
+
+- Positionner vous à la racine du répertoire
+E:\temp
+
+- Ensuite dans la barre indiquant le répertoire taper "cmd"
+- Ensuite taper la commande suivante
+ant exejar
+
+- Récupérer "weka.jar" dans le répertoire "dist"
+E:\temp\dist\weka.jar
+
+- Avant de le copier modifier l'extension de "weka.jar" présant dans "D:\Program Files\Weka-3-8" en 
+weka.jar.old
+
+- Copier le nouveau "weka.jar" dans 
+D:\Program Files\Weka-3-8
+
+### Démarrage ###
+
+- Vous pouvez maintenant démarrer Weka

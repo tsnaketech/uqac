@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Main-Class: stev.bowling.GameDemo
+Class-Path: .
+Built-By: sylvain
+Built-Date: 2020-04-03 16:13:00
+Implementation-Version: 1.0
+
